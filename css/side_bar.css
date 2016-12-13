@@ -189,6 +189,10 @@ opacity:0.7;
 border:2px solid;
 border-radius:20px;
 }*/
+
+nav.sidebar .navbar-nav a:active{
+    color: white;
+}
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
