@@ -93,7 +93,10 @@ nav.navbar .navbar-right .current a {
 }
 nav.navbar {
     padding-top:10px;
-    font-size: 18px;
+    font-size: 18px;	
+	/* upper bar */ 
+	opacity:.70;
+
 }
 nav.navbar .current {
     padding-top: 5px;
