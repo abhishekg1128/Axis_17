@@ -170,6 +170,25 @@ nav.sidebar {
 nav.sidebar .navbar-nav a{
     color: #e67e22;
 }
+/* for the texts */
+.bc {
+	padding:10px;
+background:black;
+opacity:0.7;	
+border:2px solid;
+border-radius:20px;
+
+}
+/* for the headings
+#abc {
+	
+	margin-left:850px;
+	margin-top:440px;
+	background:black;
+opacity:0.7;	
+border:2px solid;
+border-radius:20px;
+}*/
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
