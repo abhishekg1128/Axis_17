@@ -4,10 +4,10 @@
      http://www.responsivewebmobile.com
 ******************************************************************************/
 jQuery(document).ready(function() {
-	$('.carousel').carousel({
-    	pause: "false",
-    	interval: 5000
-	});
+	// $('.carousel').carousel({		// passed by data- field
+  //   	pause: "false",
+  //   	interval: 2000
+	// });
 
 	$('.carousel').css({'margin': 0, 'width': $(window).outerWidth(), 'height': $(window).outerHeight()});
 	$('.carousel .item').css({'position': 'fixed', 'width': '100%', 'height': '100%'});

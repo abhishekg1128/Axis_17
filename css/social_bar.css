@@ -1,10 +1,12 @@
 .social_bar{
-	//border: 2px solid red;
+	margin:10px;
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
 	top: auto;
 	left: auto;
+	overflow:hidden;
+
 }
 
 .social_list {
@@ -17,16 +19,88 @@
 .social_list .social-icon a {
     display: inline-block;
     padding-bottom: 20%;
-    //padding-right:20%;
+    padding-right:20%;
 
 }
 .icons {
+	
     border-radius: 50%;
+    -moz-transition: -moz-transform .8s ease-in-out;
     -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition:         transform .4s ease-in-out;
+    transition:         transform .8s ease-in-out;
 }
 .icons:hover {
+    -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    //opacity: 0.5;
+    opacity: 0.5;
+}
+/* Navigation Bar */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+nav.navbar .navbar-right {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+nav.navbar .navbar-right * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+nav.navbar .navbar-right li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  overflow: hidden;
+}
+nav.navbar .navbar-right a {
+  padding: 0.3em 0;
+  color: #e67e22;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 800;
+}
+nav.navbar .navbar-right a:before,
+nav.navbar .navbar-right a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+nav.navbar .navbar-right a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #e67e22;
+}
+nav.navbar .navbar-right a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: white;
+  white-space: nowrap;
+}
+nav.navbar .navbar-right li:hover a,
+nav.navbar .navbar-right .current a {
+  transform: translateY(100%);
+}
+nav.navbar {
+    padding-top:10px;
+    font-size: 18px;
+}
+nav.navbar .current {
+    padding-top: 5px;
+    color: #e67e22;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+
 }
