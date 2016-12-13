@@ -1,0 +1,32 @@
+.social_bar{
+	//border: 2px solid red;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	top: auto;
+	left: auto;
+}
+
+.social_list {
+    /*float:right;*/
+    list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+    /*margin-top:40%;*/
+}
+.social_list .social-icon a {
+    display: inline-block;
+    padding-bottom: 20%;
+    //padding-right:20%;
+
+}
+.icons {
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .4s ease-in-out;
+}
+.icons:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    //opacity: 0.5;
+}

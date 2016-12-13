@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.carousel-caption-heading{
+		/*font-size: 2em;*/
+		position: absolute;
+    right: 5%;
+		left: auto;
+    top: 20px;
+		bottom: auto;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 3.5em;
+    text-align: right;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.carousel-caption-details{
+	position: absolute;
+    right: auto;
+    left: 5%;
+    top: auto;
+    bottom: 40px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+
+.carousel-control{
+	height: 20%;
+	width: 10%;
+	top: 30%;
+}
