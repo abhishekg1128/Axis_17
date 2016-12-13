@@ -11,14 +11,12 @@ body,html{
       -o-transition: margin 400ms ease-out;
       transition: margin 400ms ease-out;
   }
-  
+
 #s_b{                     /* To fix diagonal transition of sidebar */
   margin-top: 0;
 }
 
 #axis_img{
-  vertical-align: middle;
-  height: 100%;
   width: 100%;
 }
 
@@ -27,7 +25,7 @@ body,html{
     position: absolute;
     /*height:90%;*/
     /*overflow:hidden;*/
-    top: 20%;
+    bottom: 20%;
     z-index: 100;
   }
 
@@ -162,6 +160,8 @@ nav.navbar {
     /*background: transparent;*/
 
 }
+
+
 nav.sidebar {
   font-family: 'Raleway', Arial, sans-serif;
 
@@ -169,9 +169,6 @@ nav.sidebar {
 }
 nav.sidebar .navbar-nav a{
     color: #e67e22;
-}
-nav.sidebar .navbar-nav a:active{
-    color: white;
 }
 /* ----------- iPhone 4 and 4S ----------- */
 
