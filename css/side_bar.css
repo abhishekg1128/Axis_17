@@ -170,6 +170,7 @@ nav.sidebar {
 nav.sidebar .navbar-nav a{
     color: #e67e22;
 }
+
 /* for the texts */
 .bc {
 	padding:10px;
@@ -177,8 +178,8 @@ background:black;
 opacity:0.7;	
 border:2px solid;
 border-radius:20px;
-
 }
+
 /* for the headings
 #abc {
 	
