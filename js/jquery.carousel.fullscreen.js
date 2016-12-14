@@ -11,17 +11,18 @@ jQuery(document).ready(function() {
 
 	$("#slides").bind('mousewheel',
 		function(e){
-			if(e.originalEvent.wheelDelta / 120 > 0){	$(this).carousel('next');	}
+			if(e.originalEvent.wheelDelta / 120 > 0) {	$(this).carousel('next');	}
 			else {	$(this).carousel('prev');	}
 		}
 	);
 
-	// $("#slides").on('slid.bs.carousel', function(e){
-	// 	var nextActiveSlide = $(e.relatedTarget).index();
-	// 	var $btns = $('#carousel-buttons');
-	// 	var $active = $btns.find("[data-slide-to='" + nextActiveSlide + "']");
-	// 	$active.click();
-	// });
+	$("#slides").on('slid.bs.carousel', function(e){
+		var nextActiveSlide = $(e.relatedTarget).index();
+		var $btns = $('#carousel-buttons');
+		var $active = $btns.find("[data-slide-to='" + nextActiveSlide + "']");
+		$btns.find('.active').removeClass('active');
+		$active.addClass('active');
+	});
 
 	$('.carousel').css({'margin': 0, 'width': $(window).outerWidth(), 'height': $(window).outerHeight()});
 	$('.carousel .item').css({'position': 'fixed', 'width': '100%', 'height': '100%'});
