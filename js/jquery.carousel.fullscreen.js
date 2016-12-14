@@ -9,10 +9,18 @@ jQuery(document).ready(function() {
   //   	interval: 2000
 	// });
 
-	$("#slides").bind('mousewheel',
+	var mousewheelevt = (/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel";
+
+	$("#slides").bind( mousewheelevt,
 		function(e){
-			if(e.originalEvent.wheelDelta / 120 > 0) {	$(this).carousel('next');	}
-			else {	$(this).carousel('prev');	}
+			if( mousewheelevt == "mousewheel" ){
+				if(e.originalEvent.wheelDelta / 120 > 0) {	$(this).carousel('prev');	}
+				else {	$(this).carousel('next');	}
+			}
+			else if( mousewheelevt == "DOMMouseScroll" ){
+				if(e.originalEvent.detail / 120 > 0) {	$(this).carousel('next');	}
+				else {	$(this).carousel('prev');	}
+			}
 		}
 	);
 
