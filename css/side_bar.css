@@ -194,6 +194,9 @@ border-radius:20px;
 nav.sidebar .navbar-nav a:active{
     color: white;
 }
+.carousel-control{
+    margin-top: 5%;
+}
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
