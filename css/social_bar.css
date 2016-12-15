@@ -23,17 +23,17 @@
 
 }
 .icons {
-
     border-radius: 50%;
-    -moz-transition: -moz-transform .8s ease-in-out;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition:         transform .8s ease-in-out;
+    -moz-transition: -moz-transform .5s ease-in-out;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition:         transform height .5s ease-in-out;
 }
 .icons:hover {
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    opacity: 0.5;
+		height: calc(width * 2);
+    /*opacity: 0.5;*/
 }
 /* Navigation Bar */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);

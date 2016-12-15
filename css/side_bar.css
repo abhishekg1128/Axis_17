@@ -16,8 +16,12 @@ body,html{
   margin-top: 0;
 }
 
+#carousel-buttons{
+  font-family: 'Roboto Slab', serif;
+}
+
 #axis_img{
-  width: 100%;
+  width: 90%;
 }
 
   /*body {overflow: hidden; }*/       /* It is making slider invisible. Abhi*/
@@ -186,8 +190,9 @@ border-radius:20px;
 }*/
 
 nav.sidebar .navbar-nav > a:active{
-    color: white;
+    color: red;
 }
+
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */

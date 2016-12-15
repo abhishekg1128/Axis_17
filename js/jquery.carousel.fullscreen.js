@@ -24,12 +24,13 @@ jQuery(document).ready(function() {
 		}
 	);
 
-	$("#slides").on('slid.bs.carousel', function(e){
+	$("#slides").on('slide.bs.carousel', function(e){
 		var nextActiveSlide = $(e.relatedTarget).index();
 		var $btns = $('#carousel-buttons');
 		var $active = $btns.find("[data-slide-to='" + nextActiveSlide + "']");
 		$btns.find('.active').removeClass('active');
 		$active.addClass('active');
+		$("#next").focus();
 	});
 
 	$('.carousel').css({'margin': 0, 'width': $(window).outerWidth(), 'height': $(window).outerHeight()});
