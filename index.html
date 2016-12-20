@@ -24,11 +24,26 @@
     <link rel="stylesheet" type="text/css" href="css/slider/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/slider/style.css" />
     <link rel="stylesheet" type="text/css" href="css/slider/custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/preloader.css" />
+
     <noscript>
 			<link rel="stylesheet" type="text/css" href="css/slider/styleNoJS.css" />
 		</noscript>
+
+    <!-- google jquery cdn -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
+    <!-- Pree Loader -->
+    <div id="loaded">
+      <div id="loader-wrapper">
+  			<div id="loader"></div>
+  			<div class="loader-section section-left"></div>
+  			<div class="loader-section section-right"></div>
+  	  </div>
+    </div>
+
+    <script type="text/javascript" src="js/preloader.js"></script>
 
     <!-- Side bar -->
     <div class="wrap">
@@ -56,7 +71,7 @@
     </nav>
     </div>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="height: 40px;">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="height: 40px; z-index: 100">
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -70,7 +85,7 @@
                 <ul class="nav navbar-navnav.navbar  navbar-right">
                     <li><a href="#" data-hover="Gallery">Gallery</a></li>
                     <li><a href="#" data-hover="Contacts">Contacts</a></li>
-                    <li><a href="#" data-hover="Sponsors">Sponsors</a></li>
+                    <li><a href="./sponsors.html" data-hover="Sponsors">Sponsors</a></li>
                 </ul>
             </div>
           </div>
@@ -115,10 +130,10 @@
               <h2 class="carousel-caption-heading">Attraction</h2>
               <div class="carousel-caption-details">
 						          <div class="bc">
-						                  You haven't experienced an adrenaline rush until you have attended an AXIS proshow!  <br>
-			 			                  As the sun sets ,it's time for the laser lights to take over. <br>
-			 			                  These proshows have left the audiences gasping for breath and asking for more; <br>
-			 			                  the spellbinding Laser Shows,the wit and wisdom of the most followed Quora writers, <br>
+						                  You haven't experienced an adrenaline rush until you have attended an AXIS proshow!  
+			 			                  As the sun sets, it's time for the laser lights to take over. 
+			 			                  These proshows have left the audiences gasping for breath and asking for more; 
+			 			                  the spellbinding Laser Shows, the wit and wisdom of the most followed Quora writers, 
 			 			                  and the exhilarating Tron Dance.
 						          </div>
 					    </div>
@@ -130,10 +145,10 @@
               <h2 class="carousel-caption-heading">Events</h2>
               <div class="carousel-caption-details">
                       <div class="bc">
-                              Have a passion for deciphering the principles behind the latest <br>
-                              technological fads and innovations in the market? Quadcopter, Bridge <br>
-                              Design, Cloud Computing, Haptic Robotic Arm; we’ve covered them all. <br>
-                              These AXIS workshops provide the perfect platform for nurturing and <br>
+                              Have a passion for deciphering the principles behind the latest 
+                              technological fads and innovations in the market? Quadcopter, Bridge 
+                              Design, Cloud Computing, Haptic Robotic Arm; we’ve covered them all. 
+                              These AXIS workshops provide the perfect platform for nurturing and 
                               honing the skills of amateur technical enthusiasts.
                       </div>
               </div>
@@ -145,10 +160,10 @@
               <h2 class="carousel-caption-heading">Workshops</h2>
               <div class="carousel-caption-details">
 						          <div class="bc">
-                              Have a passion for deciphering the principles behind the latest <br>
-                  						technological fads and innovations in the market? Quadcopter, Bridge <br>
-                  						Design, Cloud Computing, Haptic Robotic Arm; we’ve covered them all. <br>
-                  			 			These AXIS workshops provide the perfect platform for nurturing and <br>
+                              Have a passion for deciphering the principles behind the latest 
+                  						technological fads and innovations in the market? Quadcopter, Bridge 
+                  						Design, Cloud Computing, Haptic Robotic Arm; we’ve covered them all. 
+                  			 			These AXIS workshops provide the perfect platform for nurturing and 
                   			 			honing the skills of amateur technical enthusiasts.
 						          </div>
 					    </div>
@@ -160,12 +175,12 @@
               <h2 class="carousel-caption-heading">Exhibitions</h2>
               <div class="carousel-caption-details">
 						          <div class="bc">
-                              Collaborations with some of the most respected and renowned Indian organizations <br>
-                              like NDRF and DRDO have always proved to be a significant learning experience to <br>
-                              the many starry-eyed participants at AXIS,year after year. These Exhibitions have <br>
-                              always been given an auspicious start with an inauguration by some of the most  <br>
-                              eminent personalities in the field of science and technology, from the Missile <br>
-                              Man himself, late former President Dr A.P.J. Abdul Kalam to our very own alumnus,<br>
+                              Collaborations with some of the most respected and renowned Indian organizations 
+                              like NDRF and DRDO have always proved to be a significant learning experience to 
+                              the many starry-eyed participants at AXIS, year after year. These Exhibitions have 
+                              always been given an auspicious start with an inauguration by some of the most  
+                              eminent personalities in the field of science and technology, from the Missile 
+                              Man himself, late former President Dr A.P.J. Abdul Kalam to our very own alumnus, 
                               Senior Vice President, Boeing Commercial Airplanes, Dr Dinesh Keskar.
 						          </div>
 					    </div>
@@ -177,12 +192,12 @@
               <h2 class="carousel-caption-heading">Initiatives</h2>
               <div class="carousel-caption-details">
 						          <div class="bc">
-                              We at AXIS, believe in treading the roads less taken, and that has made all the difference, <br>
-                              not  only to us but to many who deserve much better. Each year  social initiatives inspire  <br>
-                              dedicated volunteers  from all ages and walks of life , who come together to 'be the change <br>
-                              they want to see'. Bleeding for a cause through blood donation drives ,spreading the word <br>
-                              for social awareness through heartwarming videos like 'Itni si Khushi',AXIS is truely a Fest <br>
-                              with a Heart .
+                              We at AXIS, believe in treading the roads less taken, and that has made all the difference, 
+                              not  only to us but to many who deserve much better. Each year  social initiatives inspire  
+                              dedicated volunteers  from all ages and walks of life, who come together to 'be the change 
+                              they want to see'. Bleeding for a cause through blood donation drives ,spreading the word 
+                              for social awareness through heartwarming videos like 'Itni si Khushi', AXIS is truely a Fest 
+                              with a Heart.
 						          </div>
 					    </div>
             </div>
@@ -190,7 +205,7 @@
 				</div><!-- /sl-slider -->
 
 				<nav id="nav-arrows" class="nav-arrows">
-					<span id="next-arrow" class="nav-arrow-next" style="z-index: 1000000;"><img height="40px" width="40px" src="./images/next.png" /></span>
+					<span id="next-arrow" class="nav-arrow-next"><img height="40px" width="40px" src="./images/next.png" /></span>
 				</nav>
 
 				<nav id="nav-dots" class="nav-dots" style="visibility: hidden">
@@ -214,9 +229,6 @@
             <li class="social-icon"><a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjI15zSxffJAhWUvo4KHQ5SCVEQFggcMAA&url=https%3A%2F%2Fwww.youtube.com%2Fuser%2FAXISVNIT&usg=AFQjCNGCKipDZEER-ilh63EIyr2UOCWpyQ" target="_blank"><img class="icons" src="./images/youtube1.png" height="40" width="40" /></a></li>
 			</ul>
 		</div>
-
-    <!-- google jquery cdn -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="js/slider-coustom.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>

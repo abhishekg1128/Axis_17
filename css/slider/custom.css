@@ -10,7 +10,7 @@
 
 .nav-arrows span {
 	position: absolute;
-	z-index: 2000;
+	z-index: 10;
 	top: 50%;
 	width: 60px;
 	height: 60px;
@@ -28,7 +28,9 @@
 }
 
 .nav-arrows span:hover {
-	border-color: rgba(150,150,150,0.9);
+	/*border-color: rgba(150,150,150,0.9);*/
+
+		animation: right .35s infinite alternate;
 }
 
 .nav-arrows span.nav-arrow-prev {
@@ -38,9 +40,22 @@
 }
 
 .nav-arrows span.nav-arrow-next {
-	right: 5%;
+	right: 0%;
 	border-left: none;
 	border-bottom: none;
+}
+
+@-webkit-keyframes right {
+  from { right: 0%; } to { right: 2%; }
+}
+@-moz-keyframes right {
+  from { right: 0%; } to { right: 2%; }
+}
+@-o-keyframes right {
+  from { right: 0%; } to { right: 2%; }
+}
+@keyframes right {
+  from { right: 0%; } to { right: 2%; }
 }
 
 /* Custom navigation dots */

@@ -62,7 +62,7 @@ jQuery(document).ready(function() {
         id = id.replaceAt(8, String.fromCharCode(49));
 
       $("#to-"+ id ).addClass('active');
-      console.log("#to-"+ $('#nav-dots').find('.nav-dot-current').attr('id') + '  ' + id);
+      // console.log("#to-"+ $('#nav-dots').find('.nav-dot-current').attr('id') + '  ' + id);
     });
 
 //   function myFunction() {

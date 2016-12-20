@@ -1,6 +1,6 @@
 .social_bar{
 	margin:10px;
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	right: 0px;
 	top: auto;
