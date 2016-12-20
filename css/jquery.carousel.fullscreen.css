@@ -10,7 +10,7 @@
 		position: absolute;
     right: 5%;
 		left: auto;
-    top: 20px;
+    top: 40px;
 		bottom: auto;
     left: 15%;
     z-index: 10;
@@ -27,7 +27,7 @@
     right: auto;
     left: 5%;
     top: auto;
-    bottom: 40px;
+    bottom: 0px;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -39,6 +39,7 @@
 
 
 .carousel-control{
+	margin-top: 5%;
 	height: 20%;
 	width: 10%;
 	top: 30%;
