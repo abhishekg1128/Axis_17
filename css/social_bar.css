@@ -18,11 +18,14 @@
 }
 .social_list .social-icon a {
     display: inline-block;
-    padding-bottom: 20%;
-    padding-right:20%;
+    //padding-bottom: 20%;
+    //padding-right:20%;
+	margin-top:8px;
 
 }
 .icons {
+	width: 50px;
+	height: 50px;
     border-radius: 50%;
     -moz-transition: -moz-transform .5s ease-in-out;
     -webkit-transition: -webkit-transform .5s ease-in-out;
@@ -110,5 +113,16 @@ nav.navbar .current {
     font-weight: 800;
     font-size: 20px;
     letter-spacing: 1px;
+}
 
+.navbar_logo {
+		height: 32px;
+    width: 0;
+    -moz-transition: -moz-transform .5s ease-in-out;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+		-o-transition: -webkit-transform .5s ease-in-out;
+    transition: width .25s ease-in-out;
+}
+#to-nav-dot-1:hover + .navbar_logo {
+    width: 32px;
 }
