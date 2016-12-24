@@ -194,6 +194,12 @@
 
 			}
 
+			if(this.current == 0)
+				setTimeout(animate, 2000);
+			else {
+				setTimeout(function(){document.querySelector("#tag_line").innerHTML = '<span id="cursor" aria-hidden="true"></span>';}, 10);
+			}
+
 			this.options.onBeforeChange( $currentSlide, this.current );
 
 			// next slide to be shown

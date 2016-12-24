@@ -4,6 +4,7 @@ jQuery(document).ready(function() {
     $('#nav-dot-1').click();
     $('#to-nav-dot-1').addClass('active');
     $p = $('#to-nav-dot-1')
+    //setTimeout(animate, 1500);
     // console.log('clicked');
   });
 
@@ -58,8 +59,12 @@ jQuery(document).ready(function() {
       // id.charCodeAt(8) += id.charCodeAt(8) + 1;
       id = id.replaceAt(8, String.fromCharCode((id.charCodeAt(8) + 1)));
 
-      if( id.charCodeAt(8) == 7 )
+      if( id.charCodeAt(8) == 7 ){
         id = id.replaceAt(8, String.fromCharCode(49));
+        setTimeout(animate, 2000);
+      }
+      /*else
+        document.querySelector("#tag_line").innerHTML = '<span id="cursor" aria-hidden="true"></span>';*/
 
       $("#to-"+ id ).addClass('active');
       // console.log("#to-"+ $('#nav-dots').find('.nav-dot-current').attr('id') + '  ' + id);
