@@ -1,0 +1,38 @@
+// array with texts to type in typewriter
+var dataText = [ "Central India's Largest Techfest, Axis'17"];
+// type one text in the typwriter
+// keeps calling itself until the text is finished
+function typeWriter(text, i, fnCallback) {
+  // chekc if text isn't finished yet
+  if (i < (text.length)) {
+    // add next character to h1
+   document.querySelector("#tag_line").innerHTML = text.substring(0, i+1) +'<span id="cursor" aria-hidden="true"></span>';
+
+    // wait for a while and call this function again for next character
+    setTimeout(function() {
+      typeWriter(text, i + 1, fnCallback)
+    }, 30);
+  }
+}
+// start a typewriter animation for a text in the dataText array
+ function StartTextAnimation(i=0) {
+   var audio_typing = new Audio('./audio/typing.mp3');
+   // check if dataText[i] exists
+  if (i < dataText[i].length - 1) {
+
+      audio_typing.play();
+    // text exists! start typewriter animation
+   typeWriter(dataText[i], 0, function(){
+     // after callback (and whole text has been animated), start next text
+     StartTextAnimation(i + 1);
+   });
+  }
+  setTimeout(function(){audio_typing.load(); audio_typing.currentTime = 0;}, 1500);
+
+}
+
+function animate(startTime){ setTimeout(StartTextAnimation, startTime); }
+
+document.addEventListener('DOMContentLoaded',function(event){
+  setTimeout(StartTextAnimation, 3000);
+});
