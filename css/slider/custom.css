@@ -45,6 +45,13 @@
 	border-bottom: none;
 }
 
+@media (max-width: 960px) {
+	.nav-arrows span.nav-arrow-next {
+		animation: right .35s infinite alternate;
+		top: 30%;
+	}
+}
+
 @-webkit-keyframes right {
   from { right: 0%; } to { right: 2%; }
 }
@@ -448,10 +455,9 @@
 	}
 
 	.demo-1 .sl-slide h2 {
-		line-height: 22px;
-		font-size: 18px;
-		margin-bottom: -40px;
-		letter-spacing: 8px;
+		line-height: 0;
+		font-size: 36px;
+		letter-spacing: 0;
 	}
 
 	.demo-1 .sl-slide blockquote p:before {

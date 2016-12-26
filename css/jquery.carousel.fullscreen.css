@@ -61,6 +61,13 @@ pre{
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
+@media (max-width: 960px) {
+	.carousel-caption-details{
+		right: 4%;
+		bottom: 40px;
+	}
+}
+
 .carousel-control{
 	margin-top: 5%;
 	height: 20%;

@@ -24,12 +24,18 @@ body,html{
   width: 90%;
 }
 
+@media (max-width: 960px) {
+  #axis_img{
+    width: 70%;
+  }
+}
+
   /*body {overflow: hidden; }*/       /* It is making slider invisible. Abhi*/
   div.wrap {
     position: absolute;
     /*height:90%;*/
     /*overflow:hidden;*/
-    bottom: 20%;
+    top: 20%;
     z-index: 100;
   }
 
@@ -178,6 +184,13 @@ border:2px solid;
 border-radius:10px;
 text-align: justify;
 width: 70%;
+}
+
+@media (max-width: 960px) {
+  .bc{
+    font-size: 0.7em;
+    width: 100%;
+  }
 }
 
 /* for the headings
