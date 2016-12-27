@@ -1,5 +1,5 @@
 // array with texts to type in typewriter
-var dataText = [ "Central India's Largest Techfest, Axis'17"];
+var dataText = [ "Central India's Largest Technical Festival."];
 // type one text in the typwriter
 // keeps calling itself until the text is finished
 function typeWriter(text, i, fnCallback) {

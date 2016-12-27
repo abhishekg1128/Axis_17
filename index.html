@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AXIS'17 VNIT,NAGPUR</title>
+    <title>AXIS'17</title>
 	  <link href="images/logo.png" rel="icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
@@ -50,7 +50,7 @@
     <nav id="s_b" class="navbar navbar-inverse sidebar" role="navigation">    <!-- id given to fix diagonal tansition -->
         <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+          <button id="sb_button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -71,21 +71,21 @@
     </nav>
     </div>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="height: 40px; z-index: 100">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="z-index: 100">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top: 0;">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a  id="to-nav-dot-1" class="current" href="#" >AXIS '17</a>
+              <a  id="to-nav-dot-1" class="current" href="#" >AXIS'17</a>
               <img class="navbar_logo" src="images/logo.png" />
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-navnav.navbar  navbar-right">
-                    <li><a href="#" data-hover="Gallery">Gallery</a></li>
-                    <li><a href="#" data-hover="Contacts">Contacts</a></li>
+                    <li><a href="./gallery.html" data-hover="Gallery">Gallery</a></li>
+                    <li><a href="./cont.html" data-hover="Contacts">Contacts</a></li>
                     <li><a href="./sponsors.html" data-hover="Sponsors">Sponsors</a></li>
                 </ul>
             </div>
@@ -113,13 +113,15 @@
 
 			             </div>
 		          </div>
-          		<script src="js/moving-background/TweenLite.min.js"></script>
-          		<script src="js/moving-background/EasePack.min.js"></script>
-          		<script src="js/moving-background/rAF.js"></script>
-          		<script src="js/moving-background/demo-1.js"></script>
+
+          		<script id="mvbg1" src="js/moving-background/TweenLite.min.js"></script>
+          		<script id="mvbg2" src="js/moving-background/EasePack.min.js"></script>
+          		<script id="mvbg3" src="js/moving-background/rAF.js"></script>
+          		<script id="mvbg4" src="js/moving-background/demo-1.js"></script>
+
                 <div style="display:table-cell; vertical-align: middle;">
                   <div style="text-align: center;">
-                    <div><img id="axis_img"  src="images/axis-big.png" style="margin:auto;"/ ></div>
+                    <div><img id="axis_img"  src="images/axis-big.png" style="margin:auto;"/></div>
                     <h1 id="tag_line"><span id="cursor" aria-hidden="true"></span></h1>
                   </div>
                 </div>
@@ -128,14 +130,16 @@
 
 					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
 						<div class="sl-slide-inner">
-              <h2 class="carousel-caption-heading">Attraction</h2>
+              <h2 class="carousel-caption-heading">Attractions</h2>
               <div class="carousel-caption-details">
 						          <div class="bc">
-						                  You haven't experienced an adrenaline rush until you have attended an AXIS proshow!
-			 			                  As the sun sets, it's time for the laser lights to take over.
-			 			                  These proshows have left the audiences gasping for breath and asking for more;
-			 			                  the spellbinding Laser Shows, the wit and wisdom of the most followed Quora writers,
-			 			                  and the exhilarating Tron Dance.
+						                  You haven't experienced an adrenaline rush until
+                              you have attended an AXIS proshow! As the sun sets,
+                              it's time for the laser lights to take over. These
+                              proshows have left the audiences gasping for breath
+                              and asking for more; the spellbinding Laser Shows,
+                              the wit and wisdom of Amish Tripathi, and the
+                              exhilarating performance by AFISHAL.
 						          </div>
 					    </div>
             </div>
@@ -146,11 +150,11 @@
               <h2 class="carousel-caption-heading">Events</h2>
               <div class="carousel-caption-details">
                       <div class="bc">
-                              Have a passion for deciphering the principles behind the latest
-                              technological fads and innovations in the market? Quadcopter, Bridge
-                              Design, Cloud Computing, Haptic Robotic Arm; we’ve covered them all.
-                              These AXIS workshops provide the perfect platform for nurturing and
-                              honing the skills of amateur technical enthusiasts.
+                              AXIS hosts 30+ events! If you have the knack of applying
+                              your knowledge, AXIS provides the platform for displaying
+                              your skills! From Robotics, Software, Construction & Design
+                              to School Events and on-the-spot events! Be the best and
+                              bag awesome prizes!
                       </div>
               </div>
             </div>
@@ -161,11 +165,13 @@
               <h2 class="carousel-caption-heading">Workshops</h2>
               <div class="carousel-caption-details">
 						          <div class="bc">
-                              Have a passion for deciphering the principles behind the latest
-                  						technological fads and innovations in the market? Quadcopter, Bridge
-                  						Design, Cloud Computing, Haptic Robotic Arm; we’ve covered them all.
-                  			 			These AXIS workshops provide the perfect platform for nurturing and
-                  			 			honing the skills of amateur technical enthusiasts.
+                              Have a passion for deciphering the principles behind
+                              the latest technological fads and innovations in the
+                              market? Self-balancing Robot, Mobile Phone building,
+                              Android App Development, Ornithocopter; we’ve covered
+                              them all. These AXIS workshops provide the perfect
+                              platform for nurturing and honing the skills of amateur
+                              technical enthusiasts.
 						          </div>
 					    </div>
             </div>
@@ -176,13 +182,15 @@
               <h2 class="carousel-caption-heading">Exhibitions</h2>
               <div class="carousel-caption-details">
 						          <div class="bc">
-                              Collaborations with some of the most respected and renowned Indian organizations
-                              like NDRF and DRDO have always proved to be a significant learning experience to
-                              the many starry-eyed participants at AXIS, year after year. These Exhibitions have
-                              always been given an auspicious start with an inauguration by some of the most
-                              eminent personalities in the field of science and technology, from the Missile
-                              Man himself, late former President Dr A.P.J. Abdul Kalam to our very own alumnus,
-                              Senior Vice President, Boeing Commercial Airplanes, Dr Dinesh Keskar.
+                              Collaborations with some of the most respected and renowned
+                              Indian organizations like Boeing, DRDO, GSI have always proved
+                              to be a significant learning experience to the many starry-eyed
+                              participants at AXIS, year after year. These Exhibitions have
+                              always been given an auspicious start with an inauguration by
+                              some of the most eminent personalities in the field of science
+                              and technology, from the Missile Man himself, late former
+                              President Dr A.P.J. Abdul Kalam to our very own alumnus, Vice
+                              President, Airbus India, Mr. Ashish Saraf.
 						          </div>
 					    </div>
             </div>
@@ -193,12 +201,14 @@
               <h2 class="carousel-caption-heading">Initiatives</h2>
               <div class="carousel-caption-details">
 						          <div class="bc">
-                              We at AXIS, believe in treading the roads less taken, and that has made all the difference,
-                              not  only to us but to many who deserve much better. Each year  social initiatives inspire
-                              dedicated volunteers  from all ages and walks of life, who come together to 'be the change
-                              they want to see'. Bleeding for a cause through blood donation drives ,spreading the word
-                              for social awareness through heartwarming videos like 'Itni si Khushi', AXIS is truely a Fest
-                              with a Heart.
+                              We at AXIS, believe in treading the roads less taken, and that
+                              has made all the difference, not only to us but to many who
+                              deserve much better. Each year social initiatives inspire
+                              dedicated volunteers from all ages and walks of life, who
+                              come together to 'be the change they want to see'. Bleeding
+                              for a cause through blood donation drives, spreading the
+                              word for social awareness through heart-warming street plays
+                              like 'Bacche Hai Hum', AXIS is truly a Fest with a Heart.
 						          </div>
 					    </div>
             </div>

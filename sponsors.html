@@ -12,7 +12,11 @@
 <link href="css/social_bar.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/scroll_bar.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="css/scroll_bar.css">
     <!-- Custom CSS
     <link href="css/grayscale.css" rel="stylesheet">
      -->
@@ -23,6 +27,7 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/preloader.css" />
     <link href="css/social_bar.css" rel="stylesheet">
+    <link href="css/sponsors.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,22 +55,22 @@
   <script type="text/javascript" src="js/preloader.js"></script>
 
 <div id="body" style="display: none;">
-  <nav class="navbar navbar-inverse navbar-fixed-top" style="height: 40px; z-index: 100; background-color: rgba(0, 0, 0, 0.9);">
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="z-index: 100; background-color: rgba(0, 0, 0, 0.9);">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top: 0;">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a  id="to-nav-dot-1" class="current" href="index.html" >AXIS '17</a>
+            <a  id="to-nav-dot-1" class="current" href="./index.html" >AXIS '17</a>
             <img class="navbar_logo" src="images/logo.png" />
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-navnav.navbar  navbar-right">
-                  <li><a href="#" data-hover="Gallery">Gallery</a></li>
-                  <li><a href="#" data-hover="Contacts">Contacts</a></li>
-                  <li><a href="./sponsors.html" data-hover="Sponsors">Sponsors</a></li>
+                  <li><a href="./gallery.html" data-hover="Gallery">Gallery</a></li>
+                  <li><a href="./cont.html" data-hover="Contacts">Contacts</a></li>
+                  <li><a href="#" data-hover="Sponsors">Sponsors</a></li>
               </ul>
           </div>
         </div>
@@ -79,91 +84,122 @@
 		<h1 class="text-center">Previous Sponsors</h1>
 		<hr>
 		<div class="container sponsor-grid">
-
-			<div class="col-lg-6 vcenter"><img src="./img/sponsors/bmw.png" class="img-responsive center-block" width="70%" ></img>
+			<div class="col-lg-12 vcenter">
+        <h1 class="text-center sponsor_heading">Title Sponsor</h1>
+        <img src="./images/sponsors/solar.jpg" class="img-responsive center-block title_spons" ></img>
 			</div>
-			<div class="col-lg-6 vcenter"><br><img src="./img/sponsors/microsoft.jpg"  class="img-responsive center-block" width="70%"></img></div>
-
 		</div>
 
+    <hr style="width: 70%;">
 
+
+  <div class="container sponsor-grid">
+
+      <h1 class="text-center sponsor_heading">Associate Title Sponsors</h1>
+    <div class="col-lg-6 vcenter">
+      <img src="./images/sponsors/boeing.png" class="img-responsive center-block" width="70%"></img>
+    </div>
+    <div class="col-lg-6 vcenter">
+      <img src="./images/sponsors/toi.jpg" class="img-responsive center-block" width="70%"></img>
+    </div>
+  </div>
+
+  <hr style="width: 70%;">
+
+<br><br> <br>
+
+	<div class="container sponsor-grid">
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/hero.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><img src="./images/sponsors/zebronics.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><img src="./images/sponsors/GABRIEL.jpg" class="img-responsive center-block" width="70%"></img></div>
+	</div
+	<br><br>
 	<br><br> <br>
 	<div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/icad.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/volks.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/cocacola.png" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><img src="./images/sponsors/ICAD.png" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/DHL-LOGO.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><br> <img src="./images/sponsors/pixlet.jpg" class="img-responsive center-block" width="70%"></img></div>
 	</div>
 	<br><br>
 	<br><br> <br>
 	<div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><br><br><img src="./img/sponsors/toi.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><br><br><img src="./img/sponsors/sbi.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/tata.png" class="img-responsive center-block" width="70%"></img></div>
-	</div>
-	<br><br>
-	<br><br> <br>
-	<div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/gmmco.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/get.jpg" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/gigabyte.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><img src="./images/sponsors/tcs.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><img src="./images/sponsors/hrmentor.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/MSG91.png" class="img-responsive center-block" width="70%"></img></div>
 	</div>
 	<br><br>
      <div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/ebay.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/fastrack.jpg" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/freecharge.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><br><img src="./images/sponsors/astral.png" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/HP LOGO HIGH RESOLUTION.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><br><img src="./images/sponsors/savan.png" class="img-responsive center-block" width="70%"></img></div>
 	</div>
 	<br><br>
     <div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/dhl.gif" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/astral.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/panasonic.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/be.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><br><br><img src="./images/sponsors/gate.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><img src="./images/sponsors/Yatra Planets.com.png" class="img-responsive center-block" width="70%"></img></div>
 	</div>
 	<br><br>
     <div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><br><br><img src="./img/sponsors/oyo.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><br><br><br><img src="./img/sponsors/SHIDORI.jpg" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><br><br><br><img src="./img/sponsors/persistent.png" class="img-responsive center-block" width="70%"></img></div>
-	</div>
-	<br><br>
-    <br><br>
-    <div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/dlink.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/euro.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/ark.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><img src="./images/sponsors/Barberia Salon Silver Module .jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><img src="./images/sponsors/Hair & Beauy Logo.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/sofi flex 4x2.jpg" class="img-responsive center-block" width="70%"></img></div>
 	</div>
 	<br><br>
     <br><br>
     <div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/ibm.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/kaspersky.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/robokidz.png" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><br><br><img src="./images/sponsors/new_vision.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><br><br><img src="./images/sponsors/robo_studio.png" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/Sachin Coaching Classes 17k.png" class="img-responsive center-block" width="70%"></img></div>
+	</div>
+	<br><br>
+    <br><br>
+    <div class="container sponsor-grid">
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/cakesinn.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><img src="./images/sponsors/Shabana Bakery Ref. Partner.png" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><br><img src="./images/sponsors/canara.jpg" class="img-responsive center-block" width="70%"></img></div>
 	</div>
 	<br><br>
         <br><br>
     <div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/rawdi.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><br><br><br><br><img src="./img/sponsors/hackerearth.png" class="img-responsive center-block" width="70%"></img></div>
-			<div class="col-lg-4 vcenter"><br><br><img src="./img/sponsors/kr.png" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><img src="./images/sponsors/gmmco.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><img src="./images/sponsors/aiesec.jpg" class="img-responsive center-block" width="70%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/mad.jpg" class="img-responsive center-block" width="70%"></img></div>
 	</div>
 	<br><br>
 	    <br><br>
     <div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><br><br><br><img src="./img/sponsors/g.png" class="img-responsive center-block" width="60%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/moil.png" class="img-responsive center-block" width="60%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/osf.jpg" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><br><img src="./images/sponsors/SHATAM LOGO.jpg" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/sadiq cos lobo.jpg" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/Rocktech Logo symbol  background jpg rgb 2.jpg" class="img-responsive center-block" width="60%"></img></div>
 	</div>
 	<br><br>
 	<div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/adi.jpg" class="img-responsive center-block" width="60%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/kr.jpg" class="img-responsive center-block" width="60%"></img></div>
-			<div class="col-lg-4 vcenter"><br><br><br><br><img src="./img/sponsors/calderys.gif" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/dp.jpg" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/PPE.jpg" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/Smart Realities.jpg" class="img-responsive center-block" width="60%"></img></div>
 	</div>
 	<br><br>
 	<div class="container sponsor-grid">
-			<div class="col-lg-4 vcenter"><br><br><img src="./img/sponsors/tibbs.png" class="img-responsive center-block" width="60%"></img></div>
-			<div class="col-lg-4 vcenter"><img src="./img/sponsors/F.png" class="img-responsive center-block" width="60%"></img></div>
-			<div class="col-lg-4 vcenter"><br><br><img src="./img/sponsors/bluedart.jpg" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/ark.jpg" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/htindia-logo (1).jpg" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/logo-dark.png" class="img-responsive center-block" width="60%"></img></div>
+	</div>
+	<br><br>
+  <div class="container sponsor-grid">
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/blogadda.png" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/end pic.jpg" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/festpav.png" class="img-responsive center-block" width="60%"></img></div>
+	</div>
+	<br><br>
+  <div class="container sponsor-grid">
+			<div class="col-lg-4 vcenter"><img src="./images/sponsors/ohcampus.png" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br><img src="./images/sponsors/dareto.png" class="img-responsive center-block" width="60%"></img></div>
+			<div class="col-lg-4 vcenter"><br><br> <br><img src="./images/sponsors/indiacollegefest.com logo.png" class="img-responsive center-block" width="60%"></img></div>
+	</div>
+	<br><br>
+  <div class="container sponsor-grid">
+			<div class="col-lg-4 col-lg-offset-4 vcenter"><img src="./images/sponsors/festinfo.png" class="img-responsive center-block" width="60%"></img></div>
 	</div>
 	<br><br>
 	</div>
@@ -177,4 +213,9 @@
 		</div>
 		</div>
   </div>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
+</html>

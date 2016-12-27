@@ -5,6 +5,7 @@
 
 // MIT license
 
+if(screen.width > 960){
 (function() {
     var lastTime = 0;
     var vendors = ['ms', 'moz', 'webkit', 'o'];
@@ -29,3 +30,4 @@
             clearTimeout(id);
         };
 }());
+}
